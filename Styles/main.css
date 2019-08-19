@@ -220,6 +220,7 @@ body {
 
 .meetUs img {
   width: 20vw;
+  max-width: 250px;
 }
 
 .meetUs h2 {
@@ -230,5 +231,13 @@ body {
 .meetUs p {
   font-size: 18px;
   width: 20vw;
+  max-width: 300px;
+  color: #7C7C7C;
+  font-weight: 500;
+}
+
+.meetUs p span {
+  color: white;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
