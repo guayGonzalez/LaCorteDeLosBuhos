@@ -5,7 +5,7 @@ var db =  firebase.firestore();
 
 //Get Contact info
 
-document.getElementById('mainForm').addEventListener('submit', submitForm);
+document.getElementById('contactSend').addEventListener('click', submitForm);
 
 function submitForm(e){
 

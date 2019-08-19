@@ -205,6 +205,84 @@ body {
   margin: 0;
 }
 
+.Intro {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../Assets/images/MainCity.svg) center center no-repeat;
+}
+
+.Intro .mainTitle {
+  height: 70vh;
+  width: 100vw;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Intro .mainTitle h1 {
+  font-size: 70px;
+  font-weight: bold;
+  max-width: 60vw;
+  text-align: center;
+  margin: 0;
+}
+
+.Intro .mainTitle h1 .big {
+  font-size: 120px;
+}
+
+.Intro .mainTitle h1 .small {
+  font-weight: 300;
+}
+
+.Intro .mainTitle p {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Intro .bottomDesc {
+  width: 100vw;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Intro .bottomDesc p {
+  margin: 0;
+  margin-left: 7vw;
+  padding: 20px 20px 20px 40px;
+  width: 37vw;
+  font-size: 18px;
+  font-weight: 400;
+  background: transparent black;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+
 .meetUs {
   height: 100vh;
   display: -webkit-box;
@@ -308,32 +386,17 @@ body {
 }
 
 .contactUs h2 {
-  font-size: 80px;
-  color: black;
+  font-size: 110px;
+  font-weight: 800;
+  color: #1A191D;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   margin: 0;
 }
 
-.contactUs #mainForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contactUs #mainForm .contact-form {
+.contactUs .contact-form {
   background-color: white;
   height: 55vh;
-  width: 30vw;
+  width: 28vw;
   border-radius: 41px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,7 +410,7 @@ body {
           justify-content: space-evenly;
 }
 
-.contactUs #mainForm .contact-form input {
+.contactUs .contact-form input {
   height: 60px;
   margin: 0px 15%;
   border: none;
@@ -356,7 +419,7 @@ body {
   font-weight: 300;
 }
 
-.contactUs #mainForm button {
+.contactUs button {
   height: 60px;
   width: 275px;
   border: none;

@@ -9,6 +9,80 @@ margin: 0;
 
 }
 
+.Intro{
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: url(../Assets/images/MainCity.svg) center center no-repeat;
+
+    .mainTitle{
+
+        height: 70vh;
+        width:100vw;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1{
+
+            font-size: 70px;
+            font-weight: bold;
+            max-width: 60vw;
+            text-align: center;
+            margin: 0;
+
+            .big{
+
+                font-size: 120px;
+
+            }
+
+            .small{
+
+                font-weight: 300;
+
+            }
+
+        }
+
+        p{
+
+            font-size: 21px;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+    }
+
+    .bottomDesc{
+
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+
+        p{
+
+            margin: 0;
+            margin-left: 7vw;
+            padding: 20px 20px 20px 40px;
+            width: 37vw;
+            font-size: 18px;
+            font-weight: 400;
+            background: transparent rgba(0, 0, 0, 1);
+            backdrop-filter: blur(30px);
+
+        }
+
+    }
+
+}
+
 .meetUs{
 
 height: 100vh;
@@ -94,26 +168,20 @@ flex-direction: column;
 
     h2{
 
-        font-size: 80px;
-        color: black;
+        font-size:110px;
+        font-weight: 800;
+        color: #1A191D;
         text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
         margin: 0;
 
     }
-
-    #mainForm{
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
 
     .contact-form{
 
         background-color: white;
         height: 55vh;
-        width: 30vw;
+        width: 28vw;
         border-radius: 41px;
         display: flex;
         flex-direction: column;
@@ -145,7 +213,7 @@ flex-direction: column;
         margin: 30px;
 
     }
-    }
+    
 
 
 }
