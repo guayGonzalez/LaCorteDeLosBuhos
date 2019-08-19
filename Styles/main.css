@@ -197,4 +197,14 @@
   font-weight: 100;
   font-style: italic;
 }
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Gilroy';
+}
+
+.aboutUs {
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
