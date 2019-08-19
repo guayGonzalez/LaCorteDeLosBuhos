@@ -2,21 +2,37 @@
 
 body{
 
-background-color: black;
-
+background: black;
 color: white;
-
 font-family: 'Gilroy';
 
 }
 
-.aboutUs{
+.meetUs{
 
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
 text-align: center;
 
-div{
+img{
 
+width: 20vw;
 
+}
+
+h2{
+
+font-size: 32px;
+font-weight: bold;
+
+}
+
+p{
+
+font-size: 18px;
+width: 20vw;
 
 }
 
