@@ -23,11 +23,27 @@
 
 <div class="contactUs">
     <h2>ÚNETE</h2>
-    <div class="contact-form">
-
-    </div>
-    <button>Enviar</button>
+    <form id="mainForm">
+        <div class="contact-form">
+            <input type="text" name="Client" id="client" placeholder="Nombre o Empresa">
+            <input type="email" name="Email" id="email" placeholder="Correo">
+            <input type="text" name="Phone" id="phone" placeholder="Telefono">
+            <input type="text" name="Product" id="product" placeholder="Producto">
+        </div>
+        <button type="submit">ENVIAR</button>
+    </form>
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-storage.js"></script>
+
+<script src="./Scripts/firebase.js"></script>
+
+<script src="./Scripts/main.js"></script>
+
 </body>
+
 </html>

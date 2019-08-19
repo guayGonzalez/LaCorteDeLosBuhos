@@ -310,5 +310,62 @@ body {
 .contactUs h2 {
   font-size: 80px;
   color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  margin: 0;
+}
+
+.contactUs #mainForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactUs #mainForm .contact-form {
+  background-color: white;
+  height: 55vh;
+  width: 30vw;
+  border-radius: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contactUs #mainForm .contact-form input {
+  height: 60px;
+  margin: 0px 15%;
+  border: none;
+  border-bottom: 1px solid #151515;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.contactUs #mainForm button {
+  height: 60px;
+  width: 275px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FFE200), to(#FF4500));
+  background-image: linear-gradient(to right, #FFE200, #FF4500);
+  margin: 30px;
 }
 /*# sourceMappingURL=main.css.map */

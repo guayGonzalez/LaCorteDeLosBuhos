@@ -86,19 +86,66 @@ flex-direction: column;
 
 .contactUs{
 
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-h2{
+    h2{
 
-font-size: 80px;
-color: black;
+        font-size: 80px;
+        color: black;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        margin: 0;
+
+    }
+
+    #mainForm{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
 
-}
+    .contact-form{
+
+        background-color: white;
+        height: 55vh;
+        width: 30vw;
+        border-radius: 41px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        input{
+
+            height: 60px;
+            margin: 0px 15%;
+            border: none;
+            border-bottom: 1px solid #151515;
+            font-size: 17px;
+            font-weight: 300;
+
+        }
+
+    }
+
+    button{
+
+        height: 60px;
+        width: 275px;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        background-image: linear-gradient(to right, #FFE200, #FF4500);
+        margin: 30px;
+
+    }
+    }
 
 
 }
