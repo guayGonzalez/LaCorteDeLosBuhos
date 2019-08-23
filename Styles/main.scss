@@ -1,5 +1,7 @@
 @import '../Assets/fonts/Gilroy/gilroyFont';
 
+//General Settings
+
 body{
 
     background: #1A191D;
@@ -8,6 +10,8 @@ body{
     margin: 0;
 
 }
+
+//Special Classes
 
 .fill{
 
@@ -43,6 +47,68 @@ body{
 
 }
 
+//Page Styles
+
+.NavBar{
+
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    background: transparent;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+
+        margin-left: 3vw;
+        object-fit: contain;
+        height:80%;
+        max-height: 60px;
+
+    }
+
+    .menuButton{
+
+        height: 70%;
+        max-height: 80px;
+        background:rgba(124, 124, 124, 0.6);
+        margin-right: 3vw;
+        border-radius: 50%;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        span{
+
+            width: 30%;
+            height: 0px;
+            border: 1px solid white;
+            transition: all 0.2s linear;
+            margin: 2px;
+
+        }
+
+        &:hover{
+
+            background:rgba(124, 124, 124, 1);
+
+            span{
+
+                width: 50%;
+
+            }
+
+        }
+        
+    }
+
+}
+
 .Intro{
 
     height: 100vh;
@@ -57,14 +123,6 @@ body{
         display: flex;
         align-items: center;
 
-        img{
-
-            margin-left: 5vw;
-            object-fit: contain;
-            height:80%;
-            max-height: 60px;
-
-        }
 
     }
 
@@ -357,11 +415,18 @@ body{
 .meetUs{
 
 height: 100vh;
+position: relative;
+
+.top{
+
+height: 100%;    
 display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
 flex-direction: column;
+z-index: 1;
+position: absolute;
 
 
 .Img{
@@ -424,6 +489,64 @@ flex-direction: column;
         font-weight: bold;
 
     }
+
+}
+}
+
+.bottom{
+
+height: 30%;
+width: 100%;
+z-index: -1;
+position: absolute;
+top: 45%;
+display:flex;
+align-items: center;
+overflow: hidden;
+white-space: nowrap;
+background: transparent;
+
+h2{
+
+font-size: 130px;
+font-weight: 800;
+text-transform: uppercase;
+color: black;
+
+}
+
+.N1{
+
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    
+}
+
+.N2{
+
+    display: inline-block;
+    animation: marquee2 20s linear infinite;
+    animation-delay: 10s;
+    
+}
+
+@keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marquee2 {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
 
 }
 

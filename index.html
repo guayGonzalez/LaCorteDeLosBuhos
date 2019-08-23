@@ -10,10 +10,17 @@
 </head>
 <body>
 
-<div class="Intro">
-    <div class="logo">
-        <img src="./Assets/images/MainLogo.png" alt="LaCorteDeLosBuhos">
+<div class="NavBar">
+    <img src="./Assets/images/MainLogo.png" alt="LaCorteDeLosBuhos">
+    <div class="menuButton" data-state="closed">
+        <span class="l1"> </span>
+        <span class="l2"> </span>
+        <span class="l2"> </span>
     </div>
+</div>
+
+<div class="Intro">
+    <div class="logo"></div>
     <div class="mainTitle">
         <h1> <span class="big">“NO SOMOS 360º,<br></span>  SOMOS 270º, <span class="small">los otros 90º</span> eres tú.”</h1>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
@@ -58,7 +65,7 @@
             </div>
             <div class="bottomControls">
                 <img class="number" src="./Assets/images/01.svg" alt="Number1">
-                <img id="90" class="actionBut" src="/Assets/images/90grados.png" alt="90deg" data-state="closed" onclick="showHidden(1)">
+                <img id="90" class="actionBut" src="/Assets/images/90grados.png" alt="90deg" data-state="closed">
             </div>
             </div>
         </div>
@@ -70,7 +77,7 @@
                         </div>
                         <div class="bottomControls">
                             <img class="number" src="./Assets/images/02.svg" alt="Number2">
-                            <img id="180" class="actionBut" src="/Assets/images/180grados.png" alt="180deg" data-state="closed" onclick="showHidden(2)">
+                            <img id="180" class="actionBut" src="/Assets/images/180grados.png" alt="180deg" data-state="closed">
                         </div>
                         </div>
         </div>
@@ -82,7 +89,7 @@
                         </div>
                         <div class="bottomControls">
                             <img class="number" src="./Assets/images/03.svg" alt="Number3">
-                            <img id="270" class="actionBut" src="/Assets/images/270grados.png" alt="2700deg" data-state="closed" onclick="showHidden(3)">
+                            <img id="270" class="actionBut" src="/Assets/images/270grados.png" alt="2700deg" data-state="closed">
                         </div>
                         </div>
         </div>
@@ -90,7 +97,7 @@
 </div>
 
 <div class="meetUs">
-    <div>
+    <div class="top">
         <div class="Img">
             <span></span><img src="Assets/images/Eye_of_the_court.png" alt="OjoDeLaCorte"><span></span>
         </div>
@@ -98,6 +105,10 @@
             <h2>NOSOTROS</h2>
             <p>Lorem <span>ipsum dolor sit amet,</span> consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et <span>accusam</span>  et justo duo dolores et ea rebum. Stet clita kasd </p>
         </div>
+    </div>
+    <div class="bottom">
+        <h2 class="N1">&nbsp;marketing digital&nbsp;diseño UX/UI&nbsp;desarrollo&nbsp;</h2>
+        <h2 class="N2">&nbsp;marketing digital&nbsp;diseño UX/UI&nbsp;desarrollo&nbsp;</h2>
     </div>
 </div>
 
@@ -146,6 +157,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
 <script src="./Scripts/main.js"></script>
+
+<script src="./Scripts/scroll.js"></script>
 
 </body>
 

@@ -228,6 +228,72 @@ body {
   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 
+.NavBar {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  background: transparent;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.NavBar img {
+  margin-left: 3vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 80%;
+  max-height: 60px;
+}
+
+.NavBar .menuButton {
+  height: 70%;
+  max-height: 80px;
+  background: rgba(124, 124, 124, 0.6);
+  margin-right: 3vw;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.NavBar .menuButton span {
+  width: 30%;
+  height: 0px;
+  border: 1px solid white;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  margin: 2px;
+}
+
+.NavBar .menuButton:hover {
+  background: #7c7c7c;
+}
+
+.NavBar .menuButton:hover span {
+  width: 50%;
+}
+
 .Intro {
   height: 100vh;
   width: 100vw;
@@ -249,14 +315,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.Intro .logo img {
-  margin-left: 5vw;
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 80%;
-  max-height: 60px;
 }
 
 .Intro .mainTitle {
@@ -540,6 +598,11 @@ body {
 
 .meetUs {
   height: 100vh;
+  position: relative;
+}
+
+.meetUs .top {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,9 +617,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 1;
+  position: absolute;
 }
 
-.meetUs .Img {
+.meetUs .top .Img {
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -573,13 +638,13 @@ body {
           justify-content: center;
 }
 
-.meetUs .Img img {
+.meetUs .top .Img img {
   width: 20vw;
   max-width: 250px;
   margin: 0px 100px;
 }
 
-.meetUs .Img span {
+.meetUs .top .Img span {
   height: 5px;
   background: white;
   border-radius: 4px;
@@ -587,7 +652,7 @@ body {
   max-width: 400px;
 }
 
-.meetUs .text {
+.meetUs .top .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,13 +669,13 @@ body {
   margin-top: 90px;
 }
 
-.meetUs .text h2 {
+.meetUs .top .text h2 {
   font-size: 32px;
   font-weight: bold;
   margin: 0px;
 }
 
-.meetUs .text p {
+.meetUs .top .text p {
   font-size: 18px;
   width: 20vw;
   max-width: 300px;
@@ -618,9 +683,91 @@ body {
   font-weight: 500;
 }
 
-.meetUs .text span {
+.meetUs .top .text span {
   color: white;
   font-weight: bold;
+}
+
+.meetUs .bottom {
+  height: 30%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  background: transparent;
+}
+
+.meetUs .bottom h2 {
+  font-size: 130px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: black;
+}
+
+.meetUs .bottom .N1 {
+  display: inline-block;
+  -webkit-animation: marquee 20s linear infinite;
+          animation: marquee 20s linear infinite;
+}
+
+.meetUs .bottom .N2 {
+  display: inline-block;
+  -webkit-animation: marquee2 20s linear infinite;
+          animation: marquee2 20s linear infinite;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+@-webkit-keyframes marquee {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes marquee2 {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
 }
 
 .contactUs {
