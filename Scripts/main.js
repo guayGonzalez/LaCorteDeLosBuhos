@@ -24,6 +24,10 @@ function styleLogo(){
     $('.menuButton').css('width', mh + 'px');
 
 }
+
+//languaje
+
+
 //PAGE SETTINGS - end
 
 //PAGE FUNCTIONS - start
