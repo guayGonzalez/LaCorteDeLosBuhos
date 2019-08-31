@@ -14,10 +14,10 @@
     <img src="./Assets/images/MainLogo.png" alt="LaCorteDeLosBuhos">
     <div class="menu">
         <ul>
-            <li><a href="#Header">Home</a></li>
-            <li><a href="#Main">Servicios</a></li>
-            <li><a href="#Us">Nosotros</a></li>
-            <li><a href="#Contact">Contactanos</a></li>
+            <li><a id="HeaderLink" href="#Header">Home</a></li>
+            <li><a id="MainLink" href="#Main">Servicios</a></li>
+            <li><a id="UsLink" href="#Us">Nosotros</a></li>
+            <li><a id="ContactLink" href="#Contact">Contactanos</a></li>
         </ul>
     </div>
     <div class="menuButton" data-state="closed">
@@ -35,11 +35,11 @@
 <div class="Intro" id="Header">
     <div class="logo"></div>
     <div class="mainTitle">
-        <h1> <span class="big">“NO SOMOS 360º,<br></span>  SOMOS 270º, <span class="small">los otros 90º</span> eres tú.”</h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+        <h1 id="PageTitle"> <span class="big">“NO SOMOS 360º,<br></span>  SOMOS 270º, <span class="small">los otros 90º</span> eres tú.”</h1>
+        <p id="PageSubtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
     </div>
     <div class="bottomDesc">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea </p>
+        <p id="PageDescription">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea </p>
     </div>
 </div>
  
@@ -115,8 +115,8 @@
             <span></span><img src="Assets/images/Eye_of_the_court.png" alt="OjoDeLaCorte"><span></span>
         </div>
         <div class="text">
-            <h2>NOSOTROS</h2>
-            <p>Lorem <span>ipsum dolor sit amet,</span> consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et <span>accusam</span>  et justo duo dolores et ea rebum. Stet clita kasd </p>
+            <h2 id="UsTitle">NOSOTROS</h2>
+            <p id="UsDesc">Lorem <span>ipsum dolor sit amet,</span> consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et <span>accusam</span>  et justo duo dolores et ea rebum. Stet clita kasd </p>
         </div>
     </div>
     <div class="bottom">
@@ -126,7 +126,7 @@
 </div>
 
 <div class="contactUs" id="Contact">
-        <h2>ÚNETE</h2>
+        <h2 id="ContactTitle">ÚNETE</h2>
         <div class="contact-form">
             <input type="text" name="Client" id="client" placeholder="Nombre o Empresa">
             <input type="email" name="Email" id="email" placeholder="Correo">
@@ -138,7 +138,7 @@
 
 <footer>
     <div class="RRSS">
-       <p>Nuestras redes sociales</p> 
+       <p id="SNtitle">Nuestras redes sociales</p> 
         <div class="Icons">
             <img src="./Assets/images/facebook-icon.svg" alt="Facebook">
             <img src="./Assets/images/instagram-icon.svg" alt="Instagram">
@@ -147,10 +147,10 @@
     </div>
     <div class="infoFoot">
         <div>
-            <div class="links">
+            <div class="links" id="links">
                 <p>Política de privacidad</p><p>Términos y condiciones</p><p>Código de licencia</p>  
             </div>
-            <p>La Corte de los Búhos - All Rights Reserved - 2019 - Contacto: +57 304 6755598</p> 
+            <p id="FootRights">La Corte de los Búhos - All Rights Reserved - 2019 - Contacto: +57 304 6755598</p> 
         </div>
     </div>
 </footer>

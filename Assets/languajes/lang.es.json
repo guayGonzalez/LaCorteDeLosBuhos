@@ -1,9 +1,57 @@
 {
 
+"Navbar":{
+
+    "HeaderLink":"Inicio",
+    "MainLink":"Servicios",
+    "UsLink":"Nosotros",
+    "ContactLink":"Contactanos"
+
+},
+
 "Intro":{
 
-"big":"<span class='big'>“NO SOMOS 360º,<br></span>",
-"small":"SOMOS 270º, <span class='small'>los otros 90º</span> eres tú.”"
+    "PageTitle":"<span class='big'>“NO SOMOS 360º,<br></span> SOMOS 270º, <span class='small'>los otros 90º</span> eres tú.”",
+    "PageSubtitle":"",
+    "PageDescription":""
+
+},
+
+"MainSection":{
+
+    "markT":"Marketing <span class='pink'>Digital</span>",
+    "markD":"",
+    "desT":"Diseño <span class='orange'>UX/UI</span>",
+    "desD":"",
+    "devT":"Desarrollo <span class='yellow'>Digital",
+    "devD":""
+
+},
+
+"MeetUs":{
+
+    "UsTitle":"NOSOTROS",
+    "UsDescription":"",
+    "Ntitle":"&nbsp;marketing digital&nbsp;diseño UX/UI&nbsp;desarrollo&nbsp;"
+
+},
+
+"ContactUs":{
+
+    "ContactTitle":"ÚNETE",
+    "client":"Nombre o Empresa",
+    "email":"Correo",
+    "phone":"Telefono",
+    "product":"Producto",
+    "contactSend":"ENVIAR"
+
+},
+
+"Footer":{
+
+    "SNtitle":"Nuestras redes sociales",
+    "links":"<p>Política de privacidad</p><p>Términos y condiciones</p><p>Código de licencia</p>",
+    "FootRights":"La Corte de los Búhos - All Rights Reserved - 2019 - Contacto: +57 304 6755598"
 
 }
 

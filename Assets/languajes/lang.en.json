@@ -1,10 +1,58 @@
 {
 
-"Intro":{
-
-"big":"<span class='big'>“WE ARE NOT 360º,<br></span>",
-"small":"WE ARE 270º, <span class='small'>and the other 90º?</span> that's you.”"
-
-}
-
+    "Navbar":{
+    
+        "HeaderLink":"Home",
+        "MainLink":"Services",
+        "UsLink":"Meet Us",
+        "ContactLink":"Contact Us"
+    
+    },
+    
+    "Intro":{
+    
+        "PageTitle":"<span class='big'>“NO SOMOS 360º,<br></span> SOMOS 270º, <span class='small'>los otros 90º</span> eres tú.”",
+        "PageSubtitle":"",
+        "PageDescription":""
+    
+    },
+    
+    "MainSection":{
+    
+        "markT":"Digital <span class='pink'>Marketing</span>",
+        "markD":"",
+        "desT":"UX/UI <span class='orange'>Design</span>",
+        "desD":"",
+        "devT":"Digital<span class='yellow'>Development</span>",
+        "devD":""
+    
+    },
+    
+    "MeetUs":{
+    
+        "UsTitle":"MEET US",
+        "UsDescription":"",
+        "Ntitle":"&nbsp;digital marketing&nbsp;UX/UI Design&nbsp;development&nbsp;"
+    
+    },
+    
+    "ContactUs":{
+    
+        "ContactTitle":"JOIN US",
+        "client":"Name or Company",
+        "email":"Email",
+        "phone":"Phone",
+        "product":"Product",
+        "contactSend":"SEND"
+    
+    },
+    
+    "Footer":{
+    
+        "SNtitle":"Our Social Networks",
+        "links":"<p>Privacy Policies</p><p>Terms and Conditions</p><p>Licence Code</p>",
+        "FootRights":"La Corte de los Búhos - All Rights Reserved - 2019 - Contact: +57 304 6755598"
+    
+    }
+    
 }
