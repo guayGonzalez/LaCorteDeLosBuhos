@@ -200,6 +200,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+html::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 body {
@@ -209,14 +216,34 @@ body {
   margin: 0;
 }
 
-.fill {
+.fillpink {
   background: #FF0074;
   border-color: #FF0074 !important;
 }
 
-.outerBorder {
+.outerBorderpink {
   border-style: solid;
   border-color: #FF0074 !important;
+}
+
+.fillOrange {
+  background: #FF4500;
+  border-color: #FF4500 !important;
+}
+
+.outerBorderOrange {
+  border-style: solid;
+  border-color: #FF4500 !important;
+}
+
+.fillYellow {
+  background: #FFE200;
+  border-color: #FFE200 !important;
+}
+
+.outerBorderYellow {
+  border-style: solid;
+  border-color: #FFE200 !important;
 }
 
 .fullTitle {
@@ -336,6 +363,35 @@ body {
 
 .NavBar .menuButton:hover span {
   width: 50%;
+}
+
+.ScrollBar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  height: 35vh;
+  width: 10vw;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ScrollBar .bar {
+  background: #7c7c7c;
+  height: 100%;
+  width: 3px;
+  position: absolute;
+}
+
+.ScrollBar .barSection {
+  background: white;
+  width: 3px;
+  position: absolute;
 }
 
 .Intro {

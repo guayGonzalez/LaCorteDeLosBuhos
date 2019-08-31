@@ -5,9 +5,12 @@ $(document).ready(function(){
 
     styleLogo();
 
+    styleScrollBar();
+
     $(window).resize(function(){
 
         styleLogo();
+        styleScrollBar();
 
     });
 
@@ -22,6 +25,24 @@ function styleLogo(){
     var mh = $('.menuButton').height();
 
     $('.menuButton').css('width', mh + 'px');
+
+}
+
+function styleScrollBar(){
+
+const section = window.innerHeight;
+
+console.log(section);
+
+const total = $(document).height();
+
+console.log(total);
+
+const barheight = (section/total)*100;
+
+console.log(barheight);
+
+$('.barSection').height(barheight+'%');
 
 }
 
