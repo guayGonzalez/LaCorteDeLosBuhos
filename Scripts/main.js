@@ -40,6 +40,10 @@ $('.menuButton').click(function(){
 
     if(s == 'closed'){
 
+        $('.NavBar').addClass('openNav');
+
+        $('.menu').show();
+
         $('.menuButton').css({
             
             'background':'rgba(124, 124, 124, 1)'
@@ -69,6 +73,10 @@ $('.menuButton').click(function(){
         $('.menuButton').attr('data-state','open');
         
     }else{
+
+        $('.NavBar').removeClass('openNav');
+
+        $('.menu').hide();
 
         $('.menuButton').css({
             

@@ -2,6 +2,13 @@
 
 //General Settings
 
+html{
+
+
+    scroll-behavior: smooth;
+
+}
+
 body{
 
     background: #1A191D;
@@ -33,9 +40,21 @@ body{
 
     text-shadow: none !important;
 
-    span{
+    .pink{
 
         color: #FF0074 !important;
+
+    }
+
+    .yellow{
+
+        color: #FFE200 !important;
+
+    }
+
+    .orange{
+
+        color: #FF4500 !important;
 
     }
 
@@ -44,6 +63,13 @@ body{
 .titleShow{
 
     text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+
+}
+
+.openNav{
+
+    background:rgba(124, 124, 124, 0.6) !important;
+    backdrop-filter: blur(20px);
 
 }
 
@@ -59,6 +85,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 500ms linear;
 
     img{
 
@@ -66,6 +93,44 @@ body{
         object-fit: contain;
         height:80%;
         max-height: 60px;
+
+    }
+
+    .menu{
+
+        margin-left:auto; 
+        margin-right: 2vw;
+        display: none;
+
+        ul{
+
+            li{
+
+                display: inline;
+                margin: 0px 20px;
+                
+                a{
+
+                    color: white;
+                    text-decoration: none;
+
+                    &:active{
+
+                        font-weight: 600;
+
+                    }
+
+                    &:hover{
+
+                        font-weight: 600;
+
+                    }
+
+                }
+
+            }
+
+        }
 
     }
 
@@ -115,7 +180,8 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background: url(../Assets/images/MainCity.svg) center center no-repeat;
+    background: url(../Assets/images/MainCityAlt.svg) center center no-repeat;
+    background-size: cover;
 
     .logo{
 
@@ -565,8 +631,10 @@ color: black;
         font-size:110px;
         font-weight: 800;
         color: #1A191D;
-        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-        margin: 0;
+        text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+        margin: 0px;
+        margin-bottom: -60px;
+        z-index: 1;
 
     }
 

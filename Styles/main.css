@@ -198,6 +198,10 @@
   font-style: italic;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #1A191D;
   color: white;
@@ -220,12 +224,26 @@ body {
   text-shadow: none !important;
 }
 
-.fullTitle span {
+.fullTitle .pink {
   color: #FF0074 !important;
+}
+
+.fullTitle .yellow {
+  color: #FFE200 !important;
+}
+
+.fullTitle .orange {
+  color: #FF4500 !important;
 }
 
 .titleShow {
   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.openNav {
+  background: rgba(124, 124, 124, 0.6) !important;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 .NavBar {
@@ -243,6 +261,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
 }
 
 .NavBar img {
@@ -251,6 +271,30 @@ body {
      object-fit: contain;
   height: 80%;
   max-height: 60px;
+}
+
+.NavBar .menu {
+  margin-left: auto;
+  margin-right: 2vw;
+  display: none;
+}
+
+.NavBar .menu ul li {
+  display: inline;
+  margin: 0px 20px;
+}
+
+.NavBar .menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.NavBar .menu ul li a:active {
+  font-weight: 600;
+}
+
+.NavBar .menu ul li a:hover {
+  font-weight: 600;
 }
 
 .NavBar .menuButton {
@@ -304,7 +348,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../Assets/images/MainCity.svg) center center no-repeat;
+  background: url(../Assets/images/MainCityAlt.svg) center center no-repeat;
+  background-size: cover;
 }
 
 .Intro .logo {
@@ -791,8 +836,10 @@ body {
   font-size: 110px;
   font-weight: 800;
   color: #1A191D;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-  margin: 0;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  margin: 0px;
+  margin-bottom: -60px;
+  z-index: 1;
 }
 
 .contactUs .contact-form {
