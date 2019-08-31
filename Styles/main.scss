@@ -654,7 +654,7 @@ color: black;
 .N1{
 
     display: inline-block;
-    animation: marquee 20s linear infinite;
+    animation: marquee1 20s linear infinite;
     
 }
 
@@ -666,7 +666,7 @@ color: black;
     
 }
 
-@keyframes marquee {
+@keyframes marquee1 {
     from {
       transform: translateX(100%);
     }
