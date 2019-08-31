@@ -198,6 +198,17 @@
   font-style: italic;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+html::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 body {
   background: #1A191D;
   color: white;
@@ -205,14 +216,34 @@ body {
   margin: 0;
 }
 
-.fill {
+.fillpink {
   background: #FF0074;
   border-color: #FF0074 !important;
 }
 
-.outerBorder {
+.outerBorderpink {
   border-style: solid;
   border-color: #FF0074 !important;
+}
+
+.fillOrange {
+  background: #FF4500;
+  border-color: #FF4500 !important;
+}
+
+.outerBorderOrange {
+  border-style: solid;
+  border-color: #FF4500 !important;
+}
+
+.fillYellow {
+  background: #FFE200;
+  border-color: #FFE200 !important;
+}
+
+.outerBorderYellow {
+  border-style: solid;
+  border-color: #FFE200 !important;
 }
 
 .fullTitle {
@@ -220,12 +251,26 @@ body {
   text-shadow: none !important;
 }
 
-.fullTitle span {
+.fullTitle .pink {
   color: #FF0074 !important;
+}
+
+.fullTitle .yellow {
+  color: #FFE200 !important;
+}
+
+.fullTitle .orange {
+  color: #FF4500 !important;
 }
 
 .titleShow {
   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.openNav {
+  background: rgba(124, 124, 124, 0.6) !important;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 .NavBar {
@@ -243,6 +288,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
 }
 
 .NavBar img {
@@ -251,6 +298,30 @@ body {
      object-fit: contain;
   height: 80%;
   max-height: 60px;
+}
+
+.NavBar .menu {
+  margin-left: auto;
+  margin-right: 2vw;
+  display: none;
+}
+
+.NavBar .menu ul li {
+  display: inline;
+  margin: 0px 20px;
+}
+
+.NavBar .menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.NavBar .menu ul li a:active {
+  font-weight: 600;
+}
+
+.NavBar .menu ul li a:hover {
+  font-weight: 600;
 }
 
 .NavBar .menuButton {
@@ -294,6 +365,35 @@ body {
   width: 50%;
 }
 
+.ScrollBar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  height: 35vh;
+  width: 10vw;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ScrollBar .bar {
+  background: #7c7c7c;
+  height: 100%;
+  width: 3px;
+  position: absolute;
+}
+
+.ScrollBar .barSection {
+  background: white;
+  width: 3px;
+  position: absolute;
+}
+
 .Intro {
   height: 100vh;
   width: 100vw;
@@ -304,7 +404,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../Assets/images/MainCity.svg) center center no-repeat;
+  background: url(../Assets/images/MainCityAlt.svg) center center no-repeat;
+  background-size: cover;
 }
 
 .Intro .logo {
@@ -791,8 +892,10 @@ body {
   font-size: 110px;
   font-weight: 800;
   color: #1A191D;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-  margin: 0;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  margin: 0px;
+  margin-bottom: -60px;
+  z-index: 1;
 }
 
 .contactUs .contact-form {

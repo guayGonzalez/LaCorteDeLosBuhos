@@ -6,10 +6,16 @@ window.onscroll = function() {detectScroll()}
 function detectScroll(){
 
 const scroll = window.scrollY;    
+
+const full = $(document).height();
  
 const separator = window.innerHeight;
 
 const i = scroll/separator;
+
+const scrollBarMove = (scroll/full)*100;
+
+$('.barSection').css('top',scrollBarMove+'%');
 
 if(i > 0.8 && i < 1.3){
 
@@ -69,7 +75,7 @@ function splitScroll(){
         triggerHook: 0.5
 
     })
-    .setClassToggle('.quarterfill1', 'fill')
+    .setClassToggle('.quarterfill1', 'fillpink')
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -78,7 +84,7 @@ function splitScroll(){
         triggerHook: 0.5
 
     })
-    .setClassToggle('.quarter1', 'outerBorder')
+    .setClassToggle('.quarter1', 'outerBorderpink')
     .addTo(controller);
 
     //Title Appear
@@ -112,7 +118,7 @@ function splitScroll(){
         triggerHook: 0.5
 
     })
-    .setClassToggle('.quarterfill2', 'fill')
+    .setClassToggle('.quarterfill2', 'fillOrange')
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -121,7 +127,25 @@ function splitScroll(){
         triggerHook: 0.5
 
     })
-    .setClassToggle('.quarter2', 'outerBorder')
+    .setClassToggle('.quarter2', 'outerBorderOrange')
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+
+        triggerElement: '.designSec',
+        triggerHook: 0.5
+
+    })
+    .setClassToggle('.quarterfill1', 'fillOrange')
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+
+        triggerElement: '.designSec',
+        triggerHook: 0.5
+
+    })
+    .setClassToggle('.quarter1', 'outerBorderOrange')
     .addTo(controller);
 
     //Text Appear
@@ -145,7 +169,7 @@ function splitScroll(){
         triggerHook: 0.5
 
     })
-    .setClassToggle('.quarterfill3', 'fill')
+    .setClassToggle('.quarterfill3', 'fillYellow')
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -154,7 +178,43 @@ function splitScroll(){
         triggerHook: 0.5
 
     })
-    .setClassToggle('.quarter4', 'outerBorder')
+    .setClassToggle('.quarter4', 'outerBorderYellow')
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+
+        triggerElement: '.developmentSec',
+        triggerHook: 0.5
+
+    })
+    .setClassToggle('.quarterfill2', 'fillYellow')
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+
+        triggerElement: '.developmentSec',
+        triggerHook: 0.5
+
+    })
+    .setClassToggle('.quarter2', 'outerBorderYellow')
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+
+        triggerElement: '.developmentSec',
+        triggerHook: 0.5
+
+    })
+    .setClassToggle('.quarterfill1', 'fillYellow')
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+
+        triggerElement: '.developmentSec',
+        triggerHook: 0.5
+
+    })
+    .setClassToggle('.quarter1', 'outerBorderYellow')
     .addTo(controller);
 
     //Text Appear

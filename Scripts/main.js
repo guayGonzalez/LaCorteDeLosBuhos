@@ -5,9 +5,12 @@ $(document).ready(function(){
 
     styleLogo();
 
+    styleScrollBar();
+
     $(window).resize(function(){
 
         styleLogo();
+        styleScrollBar();
 
     });
 
@@ -24,6 +27,28 @@ function styleLogo(){
     $('.menuButton').css('width', mh + 'px');
 
 }
+
+function styleScrollBar(){
+
+const section = window.innerHeight;
+
+console.log(section);
+
+const total = $(document).height();
+
+console.log(total);
+
+const barheight = (section/total)*100;
+
+console.log(barheight);
+
+$('.barSection').height(barheight+'%');
+
+}
+
+//languaje
+
+
 //PAGE SETTINGS - end
 
 //PAGE FUNCTIONS - start
@@ -35,6 +60,10 @@ $('.menuButton').click(function(){
     var s = $('.menuButton').attr('data-state');
 
     if(s == 'closed'){
+
+        $('.NavBar').addClass('openNav');
+
+        $('.menu').show();
 
         $('.menuButton').css({
             
@@ -65,6 +94,10 @@ $('.menuButton').click(function(){
         $('.menuButton').attr('data-state','open');
         
     }else{
+
+        $('.NavBar').removeClass('openNav');
+
+        $('.menu').hide();
 
         $('.menuButton').css({
             

@@ -12,6 +12,14 @@
 
 <div class="NavBar">
     <img src="./Assets/images/MainLogo.png" alt="LaCorteDeLosBuhos">
+    <div class="menu">
+        <ul>
+            <li><a href="#Header">Home</a></li>
+            <li><a href="#Main">Servicios</a></li>
+            <li><a href="#Us">Nosotros</a></li>
+            <li><a href="#Contact">Contactanos</a></li>
+        </ul>
+    </div>
     <div class="menuButton" data-state="closed">
         <span class="l1"> </span>
         <span class="l2"> </span>
@@ -19,7 +27,12 @@
     </div>
 </div>
 
-<div class="Intro">
+<div class="ScrollBar">
+    <span class="bar"></span>
+    <span class="barSection"></span>
+</div>
+
+<div class="Intro" id="Header">
     <div class="logo"></div>
     <div class="mainTitle">
         <h1> <span class="big">“NO SOMOS 360º,<br></span>  SOMOS 270º, <span class="small">los otros 90º</span> eres tú.”</h1>
@@ -29,12 +42,8 @@
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea </p>
     </div>
 </div>
-
-<div class="Main">
-    
-</div>
-    
-<div class="mainSection">
+ 
+<div class="mainSection" id="Main">
     <div class="interactiveLogo">
         <div class="MainLogo">
             <div class="quarter1">
@@ -63,7 +72,7 @@
     <div class="mainInformation">
         <div class="marketingSec infoSec">
             <div class="infoWrapper">
-            <h2 class="infoTitle" id="markT" >Marketing <span>Digital</span></h2>
+            <h2 class="infoTitle" id="markT" >Marketing <span class="pink">Digital</span></h2>
             <div class="hiddenInfo">
                 <p  id="markD">Lorem <span>ipsum dolor sit amet</span> , consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et <span> accusam </span>et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est </p>
             </div>
@@ -75,7 +84,7 @@
         </div>
         <div class="designSec infoSec">
                 <div class="infoWrapper">
-                        <h2 class="infoTitle" id="desT" >Diseño <span>Grafico</span></h2>
+                        <h2 class="infoTitle" id="desT" >Diseño <span class="orange">UX/UI</span></h2>
                         <div class="hiddenInfo">
                             <p  id="desD">Lorem <span>ipsum dolor sit amet</span> , consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et <span> accusam </span>et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est </p>
                         </div>
@@ -87,7 +96,7 @@
         </div>
         <div class="developmentSec infoSec">
                 <div class="infoWrapper">
-                        <h2 class="infoTitle" id="devT" >Desarrollo <span>Digital</span></h2>
+                        <h2 class="infoTitle" id="devT" >Desarrollo <span class="yellow">Digital</span></h2>
                         <div class="hiddenInfo">
                             <p  id="devD">Lorem <span>ipsum dolor sit amet</span> , consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et <span> accusam </span>et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est </p>
                         </div>
@@ -100,7 +109,7 @@
     </div>
 </div>
 
-<div class="meetUs">
+<div class="meetUs" id="Us">
     <div class="top">
         <div class="Img">
             <span></span><img src="Assets/images/Eye_of_the_court.png" alt="OjoDeLaCorte"><span></span>
@@ -116,7 +125,7 @@
     </div>
 </div>
 
-<div class="contactUs">
+<div class="contactUs" id="Contact">
         <h2>ÚNETE</h2>
         <div class="contact-form">
             <input type="text" name="Client" id="client" placeholder="Nombre o Empresa">
@@ -157,8 +166,6 @@
 <script src="./Scripts/firebase.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
 <script src="./Scripts/main.js"></script>
 
