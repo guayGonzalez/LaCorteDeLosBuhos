@@ -211,6 +211,23 @@ body{
         
     }
 
+    #langChange{
+
+        display: none;
+        margin: 0px 25px;
+
+        &:hover{
+
+            p{
+
+                font-weight: bold;
+
+            }
+
+        }
+
+    }
+
 }
 
 .ScrollBar{
@@ -601,6 +618,10 @@ position: absolute;
     align-items: center;
     justify-content: center;
     margin-top: 90px;
+    background:rgba(124, 124, 124, 0.6) !important;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
 
     h2{
 
@@ -654,7 +675,7 @@ color: black;
 .N1{
 
     display: inline-block;
-    animation: marquee 20s linear infinite;
+    animation: marquee1 20s linear infinite;
     
 }
 
@@ -666,7 +687,7 @@ color: black;
     
 }
 
-@keyframes marquee {
+@keyframes marquee1 {
     from {
       transform: translateX(100%);
     }

@@ -14,6 +14,12 @@ $(document).ready(function(){
 
     });
 
+    $.getJSON('../Assets/languajes/lang.en.json', function(data){
+
+        console.log(data);
+
+    });
+
 });
 
 function styleLogo(){
@@ -48,6 +54,28 @@ $('.barSection').height(barheight+'%');
 
 //languaje
 
+$('#langChange').click(function(){
+
+  ($('#langChange').attr('data-lang') === 'EN') ? setSpanish() : setEnglish() ;
+
+});
+
+function setEnglish(){
+
+    $('#langChange').html('<p>EN</p>').attr('data-lang','EN');
+
+    $('#markT').html("Digital <span class='pink'>Marketing</span>");
+
+}
+
+function setSpanish(){
+
+    $('#langChange').html('<p>ES</p>').attr('data-lang','ES');
+
+    $('#markT').html("Marketing <span class='pink'>Digital</span>");
+    
+}
+
 
 //PAGE SETTINGS - end
 
@@ -65,9 +93,12 @@ $('.menuButton').click(function(){
 
         $('.menu').show();
 
+        $('#langChange').show();
+
         $('.menuButton').css({
             
-            'background':'rgba(124, 124, 124, 1)'
+            'background':'rgba(124, 124, 124, 1)',
+            'margin-right':'0'
 
         });
 
@@ -99,9 +130,12 @@ $('.menuButton').click(function(){
 
         $('.menu').hide();
 
+        $('#langChange').hide();
+
         $('.menuButton').css({
             
-            'background':'rgba(124, 124, 124, 0.6)'
+            'background':'rgba(124, 124, 124, 0.6)',
+            'margin-right':'3vw'
 
         });
 

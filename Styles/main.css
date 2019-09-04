@@ -365,6 +365,15 @@ body {
   width: 50%;
 }
 
+.NavBar #langChange {
+  display: none;
+  margin: 0px 25px;
+}
+
+.NavBar #langChange:hover p {
+  font-weight: bold;
+}
+
 .ScrollBar {
   position: fixed;
   bottom: 0;
@@ -768,6 +777,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 90px;
+  background: rgba(124, 124, 124, 0.6) !important;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .meetUs .top .text h2 {
@@ -815,8 +829,8 @@ body {
 
 .meetUs .bottom .N1 {
   display: inline-block;
-  -webkit-animation: marquee 20s linear infinite;
-          animation: marquee 20s linear infinite;
+  -webkit-animation: marquee1 20s linear infinite;
+          animation: marquee1 20s linear infinite;
 }
 
 .meetUs .bottom .N2 {
@@ -827,7 +841,7 @@ body {
           animation-delay: 10s;
 }
 
-@-webkit-keyframes marquee {
+@-webkit-keyframes marquee1 {
   from {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -838,7 +852,7 @@ body {
   }
 }
 
-@keyframes marquee {
+@keyframes marquee1 {
   from {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
