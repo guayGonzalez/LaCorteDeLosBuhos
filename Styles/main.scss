@@ -26,6 +26,7 @@ body{
     color: white;
     font-family: 'Gilroy';
     margin: 0;
+    padding: 0;
 
 }
 
@@ -281,7 +282,7 @@ body{
 
     .mainTitle{
 
-        height: 60vh;
+        height: 65vh;
         width:100vw;
         align-self: center;
         display: flex;
@@ -296,6 +297,7 @@ body{
             max-width: 90vw;
             text-align: center;
             margin: 0;
+            pointer-events: none;
 
             .big{
 
@@ -324,7 +326,7 @@ body{
     .bottomDesc{
 
         width: 100vw;
-        height: 30vh;
+        height: 25vh;
         display: flex;
         align-items: center;
 
@@ -338,6 +340,7 @@ body{
             font-weight: 400;
             background: transparent rgba(0, 0, 0, 1);
             backdrop-filter: blur(30px);
+            text-align: justify;
 
         }
 
@@ -513,6 +516,7 @@ body{
                         font-size: 18px;
                         width: 50%;
                         color: #7C7C7C;
+                        text-align: justify;
 
                         span{
 
@@ -620,7 +624,7 @@ position: absolute;
     margin-top: 90px;
     background:rgba(124, 124, 124, 0.6) !important;
     backdrop-filter: blur(5px);
-    padding: 20px;
+    padding: 20px 20px 10px;
     border-radius: 10px;
 
     h2{
@@ -634,7 +638,7 @@ position: absolute;
     p{
 
         font-size: 18px;
-        width: 20vw;
+        width: 30vw;
         max-width: 300px;
         color: #7C7C7C;
         font-weight: 500;
@@ -824,4 +828,201 @@ footer{
 
 }
 
+@media only screen and (max-width: 600px){
 
+.NavBar{
+
+    position: fixed;
+
+    .menuButton{
+
+        height: 7vh !important;
+        width: 7vh !important;
+
+        span{
+
+            width: 30%;
+            height: 0px;
+            border: 2px solid white;
+            transition: all 0.2s linear;
+            margin: 2px;
+
+        }
+
+    }
+
+}
+
+.ScrollBar{
+
+display: none;
+
+}
+
+.Intro{
+
+    margin:0;
+    justify-content: space-around;
+
+    .mainTitle{
+
+        h1{
+
+            font-size: 40px;
+            font-weight: bold;
+            max-width: 90vw;
+            text-align: center;
+            margin: 0;
+            pointer-events: none;
+
+            .big{
+
+                font-size: 50px;
+
+            }
+
+            .small{
+
+                font-weight: 300;
+
+            }
+
+        }
+
+        p{
+
+            font-size: 18px;
+            margin: 1.5em;
+
+        }
+
+    }
+
+    .bottomDesc{
+
+        height: 20vh;
+
+        p{
+
+            width: 100%;
+            margin: 0;
+            font-size: 16px;
+
+        }
+
+    }
+
+}
+
+.mainSection{
+
+    flex-direction: column;
+
+    .interactiveLogo{
+
+        padding-top: 10vh;
+        height: 30vh;
+        width:100vw;
+
+        .MainLogo{
+
+            height: 30vh;
+            width: 30vh;
+
+        }
+
+    }
+
+    .mainInformation{
+
+        display:none;
+
+    }
+
+}
+
+.meetUs{
+
+    .top{
+
+        justify-content: space-around;
+
+        .Img{
+
+            margin-top: 5vh;
+            height:30vh;
+        
+            img{
+        
+                height: 30vh;
+                width: auto;
+                object-fit: cover;
+                
+            }
+        
+            span{
+                display: none;
+            }
+        
+        }
+
+        .text{
+
+            margin-top: 0;
+        
+            p{
+    
+                width: 80vw;
+
+            }
+        
+        }
+        
+    }
+
+}
+
+.contactUs{
+
+    .contact-form{
+
+        width: 90vw;
+
+    }
+
+}
+
+footer{
+
+    flex-direction: column;
+
+    .RRSS{
+
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+
+    .infoFoot{
+
+        width: 100%;
+
+        .links{
+
+            flex-direction: column;
+            margin-bottom: 40px;
+
+        }
+
+        #FootRights{
+
+            text-align: center;
+            font-size: 15px;
+
+        }
+
+    }
+
+}
+
+}

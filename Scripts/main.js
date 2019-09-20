@@ -24,6 +24,8 @@ $(document).ready(function(){
 
 function styleLogo(){
 
+    if(window.innerWidth > 600){
+
     var lw = $('.MainLogo').width();
 
     $('.MainLogo').css('height', lw + 'px');
@@ -31,6 +33,8 @@ function styleLogo(){
     var mh = $('.menuButton').height();
 
     $('.menuButton').css('width', mh + 'px');
+
+    }
 
 }
 
@@ -56,6 +60,12 @@ $('.barSection').height(barheight+'%');
 
 $('#langChange').click(function(){
 
+    $.getJSON('../Assets/languajes/lang.es.json',(result)=>{
+        $.each(result,(i, field) => {
+            console.log(i+" "+field);
+          });
+    });
+
   ($('#langChange').attr('data-lang') === 'EN') ? setSpanish() : setEnglish() ;
 
 });
@@ -64,16 +74,22 @@ function setEnglish(){
 
     $('#langChange').html('<p>EN</p>').attr('data-lang','EN');
 
-    $('#markT').html("Digital <span class='pink'>Marketing</span>");
-
+    $.getJSON('../Assets/languajes/lang.en.json',(result)=>{
+        $.each(result,(i, field) => {
+            $('#'+i).html(field);
+          });
+    });
 }
 
 function setSpanish(){
 
     $('#langChange').html('<p>ES</p>').attr('data-lang','ES');
 
-    $('#markT').html("Marketing <span class='pink'>Digital</span>");
-    
+    $.getJSON('../Assets/languajes/lang.es.json',(result)=>{
+        $.each(result,(i, field) => {
+            $('#'+i).html(field);
+          });
+    });
 }
 
 
@@ -164,6 +180,26 @@ $('.menuButton').click(function(){
     }
 
 });
+
+//Header
+
+//parallax Movement
+
+$('#Header').on('mousemove', (event) =>{
+
+    let topMoveX = (event.clientX * 0.005);
+    let topMoveY = (event.clientY * 0.005);
+
+    $('#PageTitle').css({
+        'transform':'translateX('+(topMoveX-1)+'%) translateY('+(topMoveY+1)+'%)'
+    });
+    $('#PageSubtitle').css({
+        'transform':'translateX('+(topMoveX-2)+'%) translateY('+(topMoveY+1)+'%)'
+    });
+
+
+});
+
 
 //main section
 

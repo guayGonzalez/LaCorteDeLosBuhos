@@ -1,58 +1,35 @@
 {
 
-"Navbar":{
-
     "HeaderLink":"Inicio",
     "MainLink":"Servicios",
     "UsLink":"Nosotros",
-    "ContactLink":"Contactanos"
+    "ContactLink":"Contactanos",
 
-},
-
-"Intro":{
-
-    "PageTitle":"<span class='big'>“NO SOMOS 360º,<br></span> SOMOS 270º, <span class='small'>los otros 90º</span> eres tú.”",
-    "PageSubtitle":"",
-    "PageDescription":""
-
-},
-
-"MainSection":{
+    "PageTitle":" <span class='small'>“El SECRETO ES EL </span> BALANCE“ ",
+    "PageSubtitle":"La corte de los búhos es el equilibrio perfecto para darte, no solo lo que quieres, sino lo que necesitas.",
+    "PageDescription":"Las aves más inteligentes del mundo están dispuestas a hacer que tu empresa vuele muy alto. Los Búhos tenemos las mejores habilidades en el mercado de Diseño, desarrollo de software, marketing y estrategia. ¡Vuela con nosotros! Contáctanos.",
 
     "markT":"Marketing <span class='pink'>Digital</span>",
-    "markD":"",
+    "markD":"Una de las tareas más importantes es el escuchar; por eso La Corte de los Búhos se encarga de utilizar cada palabra de los líderes para transformar sus necesidades, ideas y objetivos en realidad.",
     "desT":"Diseño <span class='orange'>UX/UI</span>",
-    "desD":"",
-    "devT":"Desarrollo <span class='yellow'>Digital",
-    "devD":""
-
-},
-
-"MeetUs":{
+    "desD":"La creación de productos es necesaria buscando resolver las necesidades concretas de los usuarios finales consiguiendo la satisfacción y experiencia de uso con un mínimo esfuerzo.",
+    "devT":"Desar<span class='yellow'>rollo",
+    "devD":"Al final, somos los encargados de hacer todo realidad. Sumado a  lo escuchado tomamos lineamientos, de marketing y diseño, para volver la idea en algo tangible dándole al cliente sinfín de opciones para decidir el método perfecto y alcanzar sus objetivos.",
 
     "UsTitle":"NOSOTROS",
-    "UsDescription":"",
-    "Ntitle":"&nbsp;marketing digital&nbsp;diseño UX/UI&nbsp;desarrollo&nbsp;"
-
-},
-
-"ContactUs":{
+    "UsDescription":"En la calles de una oscura ciudad existe una Corte que se encarga de mantener el equilibrio, siempre dispuesta a hacer que los negocios de tu empresa vuelen alto. La Corte de los Búhos se encarga de brindarle a sus clientes sus mejores habilidades en el mercado de diseño, marketing, estrategia y desarrollo desarrollo de software.",
+    "Ntitle1":"&nbsp;marketing digital&nbsp;diseño UX/UI&nbsp;desarrollo&nbsp;",
+    "Ntitle2":"&nbsp;marketing digital&nbsp;diseño UX/UI&nbsp;desarrollo&nbsp;",
 
     "ContactTitle":"ÚNETE",
     "client":"Nombre o Empresa",
     "email":"Correo",
     "phone":"Telefono",
     "product":"Producto",
-    "contactSend":"ENVIAR"
-
-},
-
-"Footer":{
+    "contactSend":"ENVIAR",
 
     "SNtitle":"Nuestras redes sociales",
     "links":"<p>Política de privacidad</p><p>Términos y condiciones</p><p>Código de licencia</p>",
     "FootRights":"La Corte de los Búhos - All Rights Reserved - 2019 - Contacto: +57 304 6755598"
-
-}
 
 }

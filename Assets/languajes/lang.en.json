@@ -1,58 +1,35 @@
 {
 
-    "Navbar":{
-    
         "HeaderLink":"Home",
         "MainLink":"Services",
         "UsLink":"Meet Us",
-        "ContactLink":"Contact Us"
+        "ContactLink":"Contact Us",
     
-    },
-    
-    "Intro":{
-    
-        "PageTitle":"<span class='big'>“NO SOMOS 360º,<br></span> SOMOS 270º, <span class='small'>los otros 90º</span> eres tú.”",
-        "PageSubtitle":"",
-        "PageDescription":""
-    
-    },
-    
-    "MainSection":{
-    
+        "PageTitle":" <span class='small'>“THE SECRET IS IN </span> THE BALANCE“ ",
+        "PageSubtitle":"La corte de los buhos has the perfect balance, to not only give you what you want, but what you need.",
+        "PageDescription":"The worlds smartest birds are ready to make your company fly very high. Our Owls have the markets best habilities in Design, Software Development and Strategic marketing. Come and fly! Contact Us",
+
         "markT":"Digital <span class='pink'>Marketing</span>",
-        "markD":"",
+        "markD":"One of the most important tasks is to listen; thats why La Corte de los Búhos takes and uses every single word of the leaders to transform their needs, ideas and objectives into a reality",
         "desT":"UX/UI <span class='orange'>Design</span>",
         "desD":"",
-        "devT":"Digital<span class='yellow'>Development</span>",
-        "devD":""
-    
-    },
-    
-    "MeetUs":{
-    
+        "devT":"Develop<span class='yellow'>ment</span>",
+        "devD":"",
+
         "UsTitle":"MEET US",
-        "UsDescription":"",
-        "Ntitle":"&nbsp;digital marketing&nbsp;UX/UI Design&nbsp;development&nbsp;"
-    
-    },
-    
-    "ContactUs":{
-    
+        "UsDescription":"In the streets of a dark city a court exists who's job is to maintain balance, always ready to make your companies buisness fly incredibly high. La Corte de los Búhos takes care of their clients by offering the best habilities in the Design, Strategic Marketing and Software Development market",
+        "Ntitle1":"&nbsp;digital marketing&nbsp;UX/UI Design&nbsp;development&nbsp;",
+        "Ntitle2":"&nbsp;digital marketing&nbsp;UX/UI Design&nbsp;development&nbsp;",
+
         "ContactTitle":"JOIN US",
         "client":"Name or Company",
         "email":"Email",
         "phone":"Phone",
         "product":"Product",
-        "contactSend":"SEND"
-    
-    },
-    
-    "Footer":{
-    
+        "contactSend":"SEND",
+
         "SNtitle":"Our Social Networks",
         "links":"<p>Privacy Policies</p><p>Terms and Conditions</p><p>Licence Code</p>",
         "FootRights":"La Corte de los Búhos - All Rights Reserved - 2019 - Contact: +57 304 6755598"
-    
-    }
-    
+  
 }

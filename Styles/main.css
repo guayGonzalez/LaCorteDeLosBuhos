@@ -214,6 +214,7 @@ body {
   color: white;
   font-family: 'Gilroy';
   margin: 0;
+  padding: 0;
 }
 
 .fillpink {
@@ -428,7 +429,7 @@ body {
 }
 
 .Intro .mainTitle {
-  height: 60vh;
+  height: 65vh;
   width: 100vw;
   -ms-flex-item-align: center;
       align-self: center;
@@ -453,6 +454,7 @@ body {
   max-width: 90vw;
   text-align: center;
   margin: 0;
+  pointer-events: none;
 }
 
 .Intro .mainTitle h1 .big {
@@ -471,7 +473,7 @@ body {
 
 .Intro .bottomDesc {
   width: 100vw;
-  height: 30vh;
+  height: 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,6 +492,7 @@ body {
   background: transparent black;
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
+  text-align: justify;
 }
 
 .mainSection {
@@ -666,6 +669,7 @@ body {
   font-size: 18px;
   width: 50%;
   color: #7C7C7C;
+  text-align: justify;
 }
 
 .mainSection .mainInformation .infoSec .infoWrapper .hiddenInfo p span {
@@ -780,7 +784,7 @@ body {
   background: rgba(124, 124, 124, 0.6) !important;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  padding: 20px;
+  padding: 20px 20px 10px;
   border-radius: 10px;
 }
 
@@ -792,7 +796,7 @@ body {
 
 .meetUs .top .text p {
   font-size: 18px;
-  width: 20vw;
+  width: 30vw;
   max-width: 300px;
   color: #7C7C7C;
   font-weight: 500;
@@ -1022,5 +1026,125 @@ footer .infoFoot .links {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .NavBar {
+    position: fixed;
+  }
+  .NavBar .menuButton {
+    height: 7vh !important;
+    width: 7vh !important;
+  }
+  .NavBar .menuButton span {
+    width: 30%;
+    height: 0px;
+    border: 2px solid white;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    margin: 2px;
+  }
+  .ScrollBar {
+    display: none;
+  }
+  .Intro {
+    margin: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .Intro .mainTitle h1 {
+    font-size: 40px;
+    font-weight: bold;
+    max-width: 90vw;
+    text-align: center;
+    margin: 0;
+    pointer-events: none;
+  }
+  .Intro .mainTitle h1 .big {
+    font-size: 50px;
+  }
+  .Intro .mainTitle h1 .small {
+    font-weight: 300;
+  }
+  .Intro .mainTitle p {
+    font-size: 18px;
+    margin: 1.5em;
+  }
+  .Intro .bottomDesc {
+    height: 20vh;
+  }
+  .Intro .bottomDesc p {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+  }
+  .mainSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainSection .interactiveLogo {
+    padding-top: 10vh;
+    height: 30vh;
+    width: 100vw;
+  }
+  .mainSection .interactiveLogo .MainLogo {
+    height: 30vh;
+    width: 30vh;
+  }
+  .mainSection .mainInformation {
+    display: none;
+  }
+  .meetUs .top {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .meetUs .top .Img {
+    margin-top: 5vh;
+    height: 30vh;
+  }
+  .meetUs .top .Img img {
+    height: 30vh;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .meetUs .top .Img span {
+    display: none;
+  }
+  .meetUs .top .text {
+    margin-top: 0;
+  }
+  .meetUs .top .text p {
+    width: 80vw;
+  }
+  .contactUs .contact-form {
+    width: 90vw;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .RRSS {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .infoFoot {
+    width: 100%;
+  }
+  footer .infoFoot .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+  footer .infoFoot #FootRights {
+    text-align: center;
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

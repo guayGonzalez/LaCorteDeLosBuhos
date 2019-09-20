@@ -3,6 +3,17 @@
 
 window.onscroll = function() {detectScroll()}
 
+$(document).ready(()=>{
+
+if(window.innerWidth > 600){
+
+splitScroll();
+
+}
+
+
+});
+
 function detectScroll(){
 
 const scroll = window.scrollY;    
@@ -230,7 +241,7 @@ function splitScroll(){
 
 }
 
-splitScroll();
+
 
 
 //SCROLL FUNCTIONS MANAGEMENT - end
