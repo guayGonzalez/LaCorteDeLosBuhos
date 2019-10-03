@@ -1,20 +1,15 @@
 //SCROLL FUNCTIONS MANAGEMENT - start
 
 
-window.onscroll = function() {detectScroll()}
+window.onscroll = function() {window.innerWidth > 600 ? detectScroll(true) : detectScroll(false)}
 
 $(document).ready(()=>{
 
-if(window.innerWidth > 600){
-
-splitScroll();
-
-}
-
+splitScroll(window.innerWidth);
 
 });
 
-function detectScroll(){
+function detectScroll(ver){
 
 const scroll = window.scrollY;    
 
@@ -24,47 +19,37 @@ const separator = window.innerHeight;
 
 const i = scroll/separator;
 
+console.log(i);
+
 const scrollBarMove = (scroll/full)*100;
 
 $('.barSection').css('top',scrollBarMove+'%');
 
-if(i > 0.8 && i < 1.3){
+switch(ver){
 
-showHidden(1,'open');
+case true:
 
-}else{
+openData([0.8, 1.3], [1.8, 2.3], [2.8], i);
 
-showHidden(1,'close');
+break;
 
-}
+case false:
 
-if(i > 1.8 && i < 2.3){
+openData([0.9, 1.5], [1.6, 2.1], [2.15], i);
 
-showHidden(2,'open');
-
-}else{
-
-showHidden(2,'close');
-
-}
-
-if(i > 2.8 && i < 3.3){
-
-showHidden(3,'open');
-
-}else{
-
-showHidden(3,'close');
+break;
 
 }
 
 }
 
-function splitScroll(){
+function splitScroll(ww){
 
+
+    var controller = new ScrollMagic.Controller();
+
+    if(ww > 600){
     //Stick Side Logo
-
-    const controller = new ScrollMagic.Controller();
 
     new ScrollMagic.Scene({
 
@@ -75,6 +60,20 @@ function splitScroll(){
     })
     .setPin('.interactiveLogo')
     .addTo(controller);
+    }else{
+        //Stick top logo
+
+        new ScrollMagic.Scene({
+            triggerElement: '.mainSection',
+            triggerHook: 0,
+            duration: '120%'
+        })
+        .setPin('.interactiveLogo', {
+            pushFollowers: false
+        })
+        .addTo(controller);
+
+    }
 
     //MARKETING SECTION 
 
@@ -241,7 +240,38 @@ function splitScroll(){
 
 }
 
+function openData(r1, r2, r3, n){
 
+    if(n > r1[0] && n < r1[1]){
 
+    showHidden(1,'open');
+    
+    }else{
+    
+    showHidden(1,'close');
+    
+    }
+    
+    if(n > r2[0] && n < r2[1]){
+    
+    showHidden(2,'open');
+    
+    }else{
+    
+    showHidden(2,'close');
+    
+    }
+    
+    if(n > r3[0]){
+    
+    showHidden(3,'open');
+    
+    }else{
+    
+    showHidden(3,'close');
+    
+    }
+
+}
 
 //SCROLL FUNCTIONS MANAGEMENT - end

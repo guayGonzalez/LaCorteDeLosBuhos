@@ -217,63 +217,6 @@ body {
   padding: 0;
 }
 
-.fillpink {
-  background: #FF0074;
-  border-color: #FF0074 !important;
-}
-
-.outerBorderpink {
-  border-style: solid;
-  border-color: #FF0074 !important;
-}
-
-.fillOrange {
-  background: #FF4500;
-  border-color: #FF4500 !important;
-}
-
-.outerBorderOrange {
-  border-style: solid;
-  border-color: #FF4500 !important;
-}
-
-.fillYellow {
-  background: #FFE200;
-  border-color: #FFE200 !important;
-}
-
-.outerBorderYellow {
-  border-style: solid;
-  border-color: #FFE200 !important;
-}
-
-.fullTitle {
-  color: white !important;
-  text-shadow: none !important;
-}
-
-.fullTitle .pink {
-  color: #FF0074 !important;
-}
-
-.fullTitle .yellow {
-  color: #FFE200 !important;
-}
-
-.fullTitle .orange {
-  color: #FF4500 !important;
-}
-
-.titleShow {
-  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
-}
-
-.openNav {
-  background: rgba(124, 124, 124, 0.6) !important;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-}
-
 .NavBar {
   height: 10vh;
   width: 100%;
@@ -289,8 +232,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: all 500ms linear;
-  transition: all 500ms linear;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .NavBar img {
@@ -299,6 +242,8 @@ body {
      object-fit: contain;
   height: 80%;
   max-height: 60px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .NavBar .menu {
@@ -323,6 +268,14 @@ body {
 
 .NavBar .menu ul li a:hover {
   font-weight: 600;
+}
+
+.NavBar .menu ul #langChange {
+  cursor: pointer;
+}
+
+.NavBar .menu ul #langChange:hover p {
+  font-weight: bold;
 }
 
 .NavBar .menuButton {
@@ -364,15 +317,6 @@ body {
 
 .NavBar .menuButton:hover span {
   width: 50%;
-}
-
-.NavBar #langChange {
-  display: none;
-  margin: 0px 25px;
-}
-
-.NavBar #langChange:hover p {
-  font-weight: bold;
 }
 
 .ScrollBar {
@@ -698,16 +642,20 @@ body {
      object-fit: contain;
 }
 
+.mainSection .mainInformation .infoSec .infoWrapper .bottomControls .number a {
+  fill: none;
+  stroke: #868686;
+  font-size: 68px;
+  font-family: Gilroy;
+  font-weight: bold;
+}
+
 .mainSection .mainInformation .infoSec .infoWrapper .bottomControls .actionBut {
   height: 80%;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-
-.mainSection .mainInformation .infoSec .infoWrapper .bottomControls .actionBut:hover {
-  height: 100%;
 }
 
 .meetUs {
@@ -931,6 +879,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  min-width: 450px;
 }
 
 .contactUs .contact-form input {
@@ -940,6 +889,64 @@ body {
   border-bottom: 1px solid #151515;
   font-size: 17px;
   font-weight: 300;
+}
+
+.contactUs .contact-form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactUs .contact-form div p {
+  font-size: 17px;
+  color: #1A191D;
+  width: 60%;
+  text-align: end;
+  margin-right: 5%;
+}
+
+.contactUs .contact-form div .check {
+  height: 20px;
+  width: 40px;
+  background-color: #7C7C7C;
+  position: relative;
+  border-radius: 15px;
+  border: 2px solid #7C7C7C;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactUs .contact-form div .check .button {
+  height: 20px;
+  width: 20px;
+  background: white;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.contactUs .contact-form div .check:hover {
+  background: white;
+  border: 2px solid #FF0074;
+  background: #FF0074;
+}
+
+.contactUs .contact-form div .check:hover .button {
+  margin-left: 20px;
+  left: auto;
 }
 
 .contactUs button {
@@ -1028,13 +1035,278 @@ footer .infoFoot .links {
           justify-content: space-between;
 }
 
+.fillpink {
+  background: #FF0074;
+  border-color: #FF0074 !important;
+}
+
+.outerBorderpink {
+  border-style: solid;
+  border-color: #FF0074 !important;
+}
+
+.fillOrange {
+  background: #FF4500;
+  border-color: #FF4500 !important;
+}
+
+.outerBorderOrange {
+  border-style: solid;
+  border-color: #FF4500 !important;
+}
+
+.fillYellow {
+  background: #FFE200;
+  border-color: #FFE200 !important;
+}
+
+.outerBorderYellow {
+  border-style: solid;
+  border-color: #FFE200 !important;
+}
+
+.fullTitle {
+  color: white !important;
+  text-shadow: none !important;
+}
+
+.fullTitle .pink {
+  color: #FF0074 !important;
+}
+
+.fullTitle .yellow {
+  color: #FFE200 !important;
+}
+
+.fullTitle .orange {
+  color: #FF4500 !important;
+}
+
+.titleShow {
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.openNav {
+  background: rgba(124, 124, 124, 0.6) !important;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.openNav .menu {
+  display: block !important;
+}
+
+.openNav .menuButton {
+  background: #7c7c7c !important;
+}
+
+.openNav .menuButton span {
+  width: 50% !important;
+  position: absolute !important;
+  margin: 0 !important;
+}
+
+.openNav .menuButton .l1 {
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
+}
+
+.openNav .menuButton .l2 {
+  -webkit-transform: rotate(-45deg) !important;
+          transform: rotate(-45deg) !important;
+}
+
+.hiddenO {
+  opacity: 0;
+}
+
+.hiddenL {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.hiddenB {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.showGrow {
+  -webkit-animation: grow 1.5s ease-in-out;
+          animation: grow 1.5s ease-in-out;
+}
+
+.showSlideL {
+  -webkit-animation: slideL 1s ease-in-out;
+          animation: slideL 1s ease-in-out;
+}
+
+.showSlideB {
+  -webkit-animation: slideB 1.5s ease-in-out;
+          animation: slideB 1.5s ease-in-out;
+}
+
+.showOp {
+  -webkit-animation: appear 1s ease-in-out;
+          animation: appear 1s ease-in-out;
+}
+
+@-webkit-keyframes grow {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.2, 0.2);
+            transform: scale(0.2, 0.2);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes grow {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.2, 0.2);
+            transform: scale(0.2, 0.2);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes slideL {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideL {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideB {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideB {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .openNav {
+    background: rgba(124, 124, 124, 0.2) !important;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .openNav img {
+    display: none;
+  }
+  .openNav .menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    width: 100vw !important;
+  }
+  .openNav .menu ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+  }
+  .openNav .menuButton {
+    position: absolute;
+    right: 3vw;
+    top: 1.5vh;
+  }
   .NavBar {
     position: fixed;
+  }
+  .NavBar img {
+    position: absolute !important;
+    left: 0;
+    top: 1.5vh;
   }
   .NavBar .menuButton {
     height: 7vh !important;
     width: 7vh !important;
+    position: absolute;
+    right: 3vw;
+    top: 1.5vh;
+    margin: 0;
   }
   .NavBar .menuButton span {
     width: 30%;
@@ -1083,18 +1355,59 @@ footer .infoFoot .links {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 210vh;
   }
   .mainSection .interactiveLogo {
     padding-top: 10vh;
     height: 30vh;
     width: 100vw;
+    background: #1A191D;
   }
   .mainSection .interactiveLogo .MainLogo {
     height: 30vh;
     width: 30vh;
   }
   .mainSection .mainInformation {
-    display: none;
+    width: 100vw;
+  }
+  .mainSection .mainInformation .infoSec {
+    height: 60vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainSection .mainInformation .infoSec .infoWrapper .infoTitle {
+    font-size: 35px;
+    text-align: center;
+  }
+  .mainSection .mainInformation .infoSec .infoWrapper .hiddenInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainSection .mainInformation .infoSec .infoWrapper .hiddenInfo p {
+    font-size: 12px;
+    width: 80%;
+  }
+  .mainSection .mainInformation .infoSec .infoWrapper .bottomControls {
+    height: 10vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainSection .mainInformation .infoSec .infoWrapper .bottomControls .number {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .mainSection .mainInformation .infoSec .infoWrapper .bottomControls .actionBut {
+    height: 90%;
+    z-index: -1;
   }
   .meetUs .top {
     -ms-flex-pack: distribute;
@@ -1119,8 +1432,37 @@ footer .infoFoot .links {
   .meetUs .top .text p {
     width: 80vw;
   }
+  .contactUs h2 {
+    font-size: 90px;
+    margin-bottom: -55px;
+  }
   .contactUs .contact-form {
     width: 90vw;
+    height: 60vh;
+    min-width: 300px;
+  }
+  .contactUs .contact-form input {
+    font-size: 14px;
+    width: 84%;
+    margin: 0 8%;
+  }
+  .contactUs .contact-form div p {
+    font-size: 14px;
+  }
+  .contactUs .contact-form div .check {
+    height: 15px;
+    width: 30px;
+  }
+  .contactUs .contact-form div .check .button {
+    height: 15px;
+    width: 15px;
+  }
+  .contactUs .contact-form div .check:hover .button {
+    margin-left: 15px;
+  }
+  .contactUs button {
+    height: 50px;
+    width: 220px;
   }
   footer {
     -webkit-box-orient: vertical;

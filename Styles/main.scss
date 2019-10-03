@@ -30,89 +30,6 @@ body{
 
 }
 
-//Special Classes
-
-.fillpink{
-
-    background: #FF0074;
-    border-color:#FF0074 !important;
-
-}
-
-.outerBorderpink{
-
-    border-style: solid;
-    border-color:#FF0074 !important;
-
-}
-
-.fillOrange{
-
-    background: #FF4500;
-    border-color:#FF4500 !important;
-
-}
-
-.outerBorderOrange{
-
-    border-style: solid;
-    border-color:#FF4500 !important;
-
-}
-
-.fillYellow{
-
-    background: #FFE200;
-    border-color:#FFE200 !important;
-
-}
-
-.outerBorderYellow{
-
-    border-style: solid;
-    border-color:#FFE200 !important;
-
-}
-
-.fullTitle{
-
-    color: white !important;
-
-    text-shadow: none !important;
-
-    .pink{
-
-        color: #FF0074 !important;
-
-    }
-
-    .yellow{
-
-        color: #FFE200 !important;
-
-    }
-
-    .orange{
-
-        color: #FF4500 !important;
-
-    }
-
-}
-
-.titleShow{
-
-    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
-
-}
-
-.openNav{
-
-    background:rgba(124, 124, 124, 0.6) !important;
-    backdrop-filter: blur(20px);
-
-}
-
 //Page Styles
 
 .NavBar{
@@ -125,7 +42,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all 500ms linear;
+    transition: all 0.5s ease-in-out;
 
     img{
 
@@ -133,6 +50,7 @@ body{
         object-fit: contain;
         height:80%;
         max-height: 60px;
+        transition: all 1s ease-in-out;
 
     }
 
@@ -169,6 +87,23 @@ body{
                 }
 
             }
+
+            #langChange{
+
+                cursor: pointer;
+
+                &:hover{
+
+                    p{
+
+                        font-weight: bold;
+
+                    }
+
+                }
+
+            }
+
 
         }
 
@@ -210,23 +145,6 @@ body{
 
         }
         
-    }
-
-    #langChange{
-
-        display: none;
-        margin: 0px 25px;
-
-        &:hover{
-
-            p{
-
-                font-weight: bold;
-
-            }
-
-        }
-
     }
 
 }
@@ -543,6 +461,14 @@ body{
                         height: 100%;
                         object-fit: contain;
 
+                        a{
+                            fill:none;stroke:#868686;
+                            font-size:68px;
+                            font-family:Gilroy; 
+                            font-weight:bold;
+                        }
+
+
                     }
 
                     .actionBut{
@@ -550,12 +476,6 @@ body{
                         height: 80%;
                         object-fit: contain;
                         transition: all 0.5s ease-in-out;
-
-                        &:hover{
-
-                            height: 100%;
-
-                        }
 
                     }
 
@@ -743,6 +663,7 @@ color: black;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        min-width: 450px;
 
         input{
 
@@ -752,6 +673,66 @@ color: black;
             border-bottom: 1px solid #151515;
             font-size: 17px;
             font-weight: 300;
+
+        }
+
+        div{
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            p{
+
+                font-size: 17px;
+                color: #1A191D;
+                width: 60%;
+                text-align: end;
+                margin-right: 5%;
+
+            }
+
+            .check{
+
+                height: 20px;
+                width: 40px;
+                background-color: #7C7C7C;
+                position: relative;
+                border-radius: 15px;
+                border: 2px solid #7C7C7C;
+                transition: all 0.3s ease-in-out;
+
+                .button{
+
+                    height: 20px;
+                    width: 20px;
+                    background: white;
+                    border-radius: 15px;
+                    position: absolute;
+                    left: 0;
+                    z-index: 1;
+                    transition: all 0.3s linear;
+
+                }
+
+
+                &:hover{
+
+                    background: white;
+                    border: 2px solid #FF0074;
+                    background: #FF0074;
+
+                    .button{
+
+                    margin-left: 20px;
+                    left: auto;
+
+                    }
+
+                }
+
+            }
 
         }
 
@@ -828,16 +809,303 @@ footer{
 
 }
 
+
+//Special Classes
+
+.fillpink{
+
+    background: #FF0074;
+    border-color:#FF0074 !important;
+
+}
+
+.outerBorderpink{
+
+    border-style: solid;
+    border-color:#FF0074 !important;
+
+}
+
+.fillOrange{
+
+    background: #FF4500;
+    border-color:#FF4500 !important;
+
+}
+
+.outerBorderOrange{
+
+    border-style: solid;
+    border-color:#FF4500 !important;
+
+}
+
+.fillYellow{
+
+    background: #FFE200;
+    border-color:#FFE200 !important;
+
+}
+
+.outerBorderYellow{
+
+    border-style: solid;
+    border-color:#FFE200 !important;
+
+}
+
+.fullTitle{
+
+    color: white !important;
+
+    text-shadow: none !important;
+
+    .pink{
+
+        color: #FF0074 !important;
+
+    }
+
+    .yellow{
+
+        color: #FFE200 !important;
+
+    }
+
+    .orange{
+
+        color: #FF4500 !important;
+
+    }
+
+}
+
+.titleShow{
+
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+
+}
+
+.openNav{
+
+    background:rgba(124, 124, 124, 0.6) !important;
+    backdrop-filter: blur(20px);
+
+    .menu{
+
+        display: block !important;
+
+    }
+
+    .menuButton{
+
+        background:rgba(124, 124, 124, 1) !important;
+
+        span{
+
+            width:50% !important;
+            position:absolute !important;
+            margin:0 !important;
+
+        }
+
+        .l1{
+
+            transform:rotate(45deg) !important;
+
+        }
+
+        .l2{
+
+            transform:rotate(-45deg) !important;
+
+        }
+
+    }
+
+}
+
+//Animation Classes 
+
+.hiddenO{
+
+    opacity: 0;
+
+}
+
+.hiddenL{
+
+    transform: translateX(-100%);
+
+}
+
+.hiddenB{
+
+    transform: translateY(100%);
+
+}
+
+.showGrow{
+
+animation: grow 1.5s ease-in-out;
+
+}
+
+.showSlideL{
+
+animation: slideL 1s ease-in-out;
+
+}
+
+.showSlideB{
+
+animation: slideB 1.5s ease-in-out;
+
+}
+
+.showOp{
+
+animation: appear 1s ease-in-out;
+
+}
+
+//Animations
+
+@keyframes grow{
+
+from{
+
+    opacity: 0;
+    transform: scale(0.2, 0.2);
+
+}
+
+to{
+
+    opacity: 1;
+    transform:  scale(1,1);
+
+}
+}
+
+@keyframes slideL{
+
+    from{
+
+        transform: translateX(-100%);
+    
+    }
+    
+    to{
+    
+        transform: translateX(0);
+    
+    }
+
+}
+
+@keyframes slideB{
+
+    from{
+
+        transform: translateY(100%);
+    
+    }
+    
+    to{
+    
+        transform: translateY(0);
+    
+    }
+
+}
+
+@keyframes appear{
+
+    from{
+
+        opacity: 0;
+    
+    }
+    
+    to{
+    
+        opacity: 1;
+    
+    }
+
+}
+
 @media only screen and (max-width: 600px){
+
+.openNav{
+
+    background:rgba(124, 124, 124, 0.2) !important;
+    backdrop-filter: blur(20px);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    img{
+
+        display: none;
+
+    }
+
+    .menu{
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100vw !important;
+
+        ul{
+
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+
+        }
+
+    }
+
+    .menuButton{
+
+
+        position: absolute;
+        right: 3vw;
+        top:1.5vh;
+
+    }
+
+}    
 
 .NavBar{
 
     position: fixed;
 
+    img{
+
+        position: absolute !important;
+        left: 0;
+        top: 1.5vh;
+
+    }
+
     .menuButton{
 
         height: 7vh !important;
         width: 7vh !important;
+        position: absolute;
+        right: 3vw;
+        top: 1.5vh;
+        margin: 0;
 
         span{
 
@@ -917,12 +1185,14 @@ display: none;
 .mainSection{
 
     flex-direction: column;
+    height: 210vh;
 
     .interactiveLogo{
 
         padding-top: 10vh;
         height: 30vh;
         width:100vw;
+        background: #1A191D;
 
         .MainLogo{
 
@@ -935,7 +1205,60 @@ display: none;
 
     .mainInformation{
 
-        display:none;
+        width: 100vw;
+
+        .infoSec{
+
+            height: 60vh;
+            justify-content: center;
+
+            .infoWrapper{
+
+                .infoTitle{
+
+                    font-size: 35px;
+                    text-align: center;
+
+                }
+
+                .hiddenInfo{
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p{
+
+                        font-size: 12px;
+                        width: 80%;
+
+                    }
+
+                }
+
+                .bottomControls{
+
+                    height: 10vh;
+                    justify-content: center;
+
+                    .number{
+
+                    transition: all 0.5s ease-in-out;
+
+                    }
+
+                    .actionBut{
+
+                        height: 90%;
+                        z-index: -1;
+
+                    }
+
+                }
+
+            }
+
+        }
 
     }
 
@@ -984,9 +1307,68 @@ display: none;
 
 .contactUs{
 
+    h2{
+
+        font-size: 90px;
+        margin-bottom: -55px;
+
+    }
+
     .contact-form{
 
         width: 90vw;
+        height: 60vh;
+        min-width: 300px;
+
+        input{
+
+            font-size: 14px;
+            width: 84%;
+            margin: 0 8%;
+
+        }
+
+        div{
+
+            p{
+
+                font-size: 14px;
+
+            }
+
+            .check{
+
+                height: 15px;
+                width: 30px;
+
+                .button{
+
+                    height: 15px;
+                    width: 15px;
+
+                }
+
+                &:hover{
+
+
+                    .button{
+
+                        margin-left: 15px;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    button{
+
+        height: 50px;
+        width: 220px;
 
     }
 

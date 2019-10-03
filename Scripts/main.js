@@ -16,8 +16,6 @@ $(document).ready(function(){
 
     $.getJSON('../Assets/languajes/lang.en.json', function(data){
 
-        console.log(data);
-
     });
 
 });
@@ -42,15 +40,9 @@ function styleScrollBar(){
 
 const section = window.innerHeight;
 
-console.log(section);
-
 const total = $(document).height();
 
-console.log(total);
-
 const barheight = (section/total)*100;
-
-console.log(barheight);
 
 $('.barSection').height(barheight+'%');
 
@@ -60,19 +52,13 @@ $('.barSection').height(barheight+'%');
 
 $('#langChange').click(function(){
 
-    $.getJSON('../Assets/languajes/lang.es.json',(result)=>{
-        $.each(result,(i, field) => {
-            console.log(i+" "+field);
-          });
-    });
-
   ($('#langChange').attr('data-lang') === 'EN') ? setSpanish() : setEnglish() ;
 
 });
 
 function setEnglish(){
 
-    $('#langChange').html('<p>EN</p>').attr('data-lang','EN');
+    $('#langChange').html('<a>EN</a>').attr('data-lang','EN');
 
     $.getJSON('../Assets/languajes/lang.en.json',(result)=>{
         $.each(result,(i, field) => {
@@ -83,7 +69,7 @@ function setEnglish(){
 
 function setSpanish(){
 
-    $('#langChange').html('<p>ES</p>').attr('data-lang','ES');
+    $('#langChange').html('<a>ES</a>').attr('data-lang','ES');
 
     $.getJSON('../Assets/languajes/lang.es.json',(result)=>{
         $.each(result,(i, field) => {
@@ -106,74 +92,12 @@ $('.menuButton').click(function(){
     if(s == 'closed'){
 
         $('.NavBar').addClass('openNav');
-
-        $('.menu').show();
-
-        $('#langChange').show();
-
-        $('.menuButton').css({
-            
-            'background':'rgba(124, 124, 124, 1)',
-            'margin-right':'0'
-
-        });
-
-        $('.menuButton span').css({
-
-            'width':'50%',
-            'position':'absolute',
-            'margin':'0px'
-
-        });
-
-        $('.l1').css({
-
-            'transform':'rotate(45deg)'
-
-        });
-
-        $('.l2').css({
-
-            'transform':'rotate(-45deg)'
-
-        });
-
+   
         $('.menuButton').attr('data-state','open');
         
     }else{
 
         $('.NavBar').removeClass('openNav');
-
-        $('.menu').hide();
-
-        $('#langChange').hide();
-
-        $('.menuButton').css({
-            
-            'background':'rgba(124, 124, 124, 0.6)',
-            'margin-right':'3vw'
-
-        });
-
-        $('.menuButton span').css({
-
-            'width':'30%',
-            'position':'static',
-            'margin':'2px'
-
-        });
-
-        $('.l1').css({
-
-            'transform':'none'
-
-        });
-
-        $('.l2').css({
-
-            'transform':'none'
-
-        });
 
         $('.menuButton').attr('data-state','closed');
 

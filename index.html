@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="NavBar">
+<div class="NavBar hiddenO">
     <img src="./Assets/images/MainLogo.png" alt="LaCorteDeLosBuhos">
     <div class="menu">
         <ul>
@@ -18,6 +18,7 @@
             <li><a id="MainLink" href="#Main">Servicios</a></li>
             <li><a id="UsLink" href="#Us">Nosotros</a></li>
             <li><a id="ContactLink" href="#Contact">Contactanos</a></li>
+            <li id="langChange" data-lang="ES"><a>ES</a></li>
         </ul>
     </div>
     <div class="menuButton" data-state="closed">
@@ -25,21 +26,20 @@
         <span class="l2"> </span>
         <span class="l2"> </span>
     </div>
-    <div id="langChange" data-lang="ES"><p>ES</p></div>
 </div>
 
-<div class="ScrollBar">
+<div class="ScrollBar hiddenB">
     <span class="bar"></span>
     <span class="barSection"></span>
 </div>
 
 <div class="Intro" id="Header">
     <div class="logo"></div>
-    <div class="mainTitle">
+    <div class="mainTitle hiddenO">
         <h1 id="PageTitle"> <span class="small">“El SECRETO ES EL </span> BALANCE"</h1>
         <p id="PageSubtitle">La corte de los búhos es el equilibrio perfecto para darte, no solo lo que quieres, sino lo que necesitas.</p>
     </div>
-    <div class="bottomDesc">
+    <div class="bottomDesc hiddenL">
         <p id="PageDescription">Las aves más inteligentes del mundo están dispuestas a hacer que tu empresa vuele muy alto. Los Búhos tenemos las mejores habilidades en el mercado de Diseño, desarrollo web, marketing y estrategia. ¡Vuela con nosotros! Contáctanos.</p>
     </div>
 </div>
@@ -79,7 +79,7 @@
                 </p>
             </div>
             <div class="bottomControls">
-                <img class="number" src="./Assets/images/01.svg" alt="Number1">
+                <img class="number" src="./Assets/images/01@2x.png" alt="Number1">
                 <img id="90" class="actionBut" src="/Assets/images/90grados.png" alt="90deg" data-state="closed">
             </div>
             </div>
@@ -92,7 +92,7 @@
                             </p>
                         </div>
                         <div class="bottomControls">
-                            <img class="number" src="./Assets/images/02.svg" alt="Number2">
+                            <img class="number" src="./Assets/images/02@2x.png" alt="Number2">
                             <img id="180" class="actionBut" src="/Assets/images/180grados.png" alt="180deg" data-state="closed">
                         </div>
                         </div>
@@ -105,7 +105,7 @@
                             </p>
                         </div>
                         <div class="bottomControls">
-                            <img class="number" src="./Assets/images/03.svg" alt="Number3">
+                            <img class="number" src="./Assets/images/03@2x.png" alt="Number3">
                             <img id="270" class="actionBut" src="/Assets/images/270grados.png" alt="2700deg" data-state="closed">
                         </div>
                         </div>
@@ -137,6 +137,7 @@
             <input type="email" name="Email" id="email" placeholder="Correo">
             <input type="text" name="Phone" id="phone" placeholder="Telefono">
             <input type="text" name="Product" id="product" placeholder="Producto">
+            <div><p>Acepto los términos y condiciones de tratamiento de datos</p><span class="check"><span class="button"></span></span></div>
         </div>
         <button id="contactSend">ENVIAR</button>
 </div>
@@ -172,9 +173,13 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
 <script src="./Scripts/main.js"></script>
 
 <script src="./Scripts/scroll.js"></script>
+
+<script src="./Scripts/animations.js"></script>
 
 </body>
 
